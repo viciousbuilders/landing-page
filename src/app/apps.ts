@@ -52,7 +52,7 @@ export const apps: App[] = [
   {
     name: "Plan2Go",
     category: "Travel",
-    image: "/project-screenshots/travel.png",
+    image: "/project-screenshots/plan2go-live.jpg",
     description:
       "Build a realistic multi-day itinerary with travel time, opening hours, and maps.",
     href: "https://plan2go-sandy.vercel.app",
