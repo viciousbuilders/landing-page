@@ -5,7 +5,7 @@ import { apps } from "../apps";
 import ThemeToggle from "../theme-toggle";
 
 export const metadata: Metadata = {
-  title: "All apps — vietbrosinaus",
+  title: "All apps | vietbrosinaus",
   description: "Explore all free and open-source apps built by vietbrosinaus.",
 };
 
