@@ -20,16 +20,6 @@ export const apps: App[] = [
     domain: "ban-bai.vercel.app",
   },
   {
-    name: "Sanguosha Online",
-    category: "Game",
-    image: "/project-screenshots/sanguosha-live.jpg",
-    description:
-      "Play Tam Quốc Sát Nội Chiến with friends in a bilingual Vietnamese and English web experience.",
-    href: "https://sanguosha-online.vercel.app",
-    domain: "sanguosha-online.vercel.app",
-    featured: false,
-  },
-  {
     name: "Karaoke Now",
     category: "Entertainment",
     image: "/project-screenshots/karaoke-live.jpg",
