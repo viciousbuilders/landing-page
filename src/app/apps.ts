@@ -13,7 +13,7 @@ export const apps: App[] = [
   {
     name: "Bàn Bài",
     category: "Game",
-    image: "/project-screenshots/ban-bai.svg",
+    image: "/project-screenshots/ban-bai-home.webp",
     description:
       "Create a private card table, invite friends by link, and play with a classic deck or Tam Quốc Sát cards.",
     href: "https://ban-bai.vercel.app",
