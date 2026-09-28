@@ -11,7 +11,7 @@ export type App = {
 
 export const apps: App[] = [
   {
-    name: "Bàn Bài",
+    name: "Card Table",
     category: "Game",
     image: "/project-screenshots/ban-bai-home.webp",
     description:
