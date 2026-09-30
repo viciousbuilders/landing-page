@@ -27,8 +27,8 @@ export const apps: App[] = [
       "linear-gradient(135deg, rgb(7 8 12) 0%, rgb(10 10 17) 100%)",
     description:
       "Open a room, queue a song, and sing together from anywhere.",
-    href: "https://karaokenow.vietbrosinaus.com",
-    domain: "karaokenow.vietbrosinaus.com",
+    href: "https://karaoke-now.vietbrosinaus.com",
+    domain: "karaoke-now.vietbrosinaus.com",
   },
   {
     name: "PriceCheck AU",

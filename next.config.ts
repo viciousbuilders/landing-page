@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
         destination: "https://discord.gg/QChBwbDDVU",
         permanent: false,
       },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "karaoke-now.vietbrosinaus.com" }],
+        destination: "https://www.karaokenow.co/:path*",
+        permanent: true,
+      },
     ];
   },
   images: {
