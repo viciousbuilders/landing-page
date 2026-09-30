@@ -16,8 +16,8 @@ export const apps: App[] = [
     image: "/project-screenshots/ban-bai-home.webp",
     description:
       "Create a private card table, invite friends by link, and play with a classic deck or Sanguosha cards.",
-    href: "https://ban-bai.vercel.app",
-    domain: "ban-bai.vercel.app",
+    href: "https://card-table.vietbrosinaus.com",
+    domain: "card-table.vietbrosinaus.com",
   },
   {
     name: "Karaoke Now",
