@@ -15,7 +15,7 @@ export const apps: App[] = [
     category: "Game",
     image: "/project-screenshots/ban-bai-home.webp",
     description:
-      "Create a private card table, invite friends by link, and play with a classic deck or Tam Quốc Sát cards.",
+      "Create a private card table, invite friends by link, and play with a classic deck or Sanguosha cards.",
     href: "https://ban-bai.vercel.app",
     domain: "ban-bai.vercel.app",
   },
