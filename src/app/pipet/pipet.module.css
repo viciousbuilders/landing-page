@@ -1,0 +1,55 @@
+.page { --paper: #f6f2ea; --ink: #3a3730; --muted: #6b6559; --coral: #a94428; --line: #d9cfc1; background: var(--paper); color: var(--ink); min-height: 100vh; font-family: var(--font-geist-sans), sans-serif; }
+.page a { text-underline-offset: 4px; }
+.page a:focus-visible, .page summary:focus-visible { outline: 3px solid var(--coral); outline-offset: 5px; border-radius: 4px; }
+.nav, .hero, .benefits, .install, .faq, .credit, .footer { max-width: 1160px; margin-inline: auto; padding-inline: 28px; }
+.nav { min-height: 100px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.wordmark { display: flex; align-items: center; gap: 10px; font-size: 25px; font-weight: 750; letter-spacing: -.04em; }
+.navLinks { display: flex; gap: 32px; font-size: 13px; color: var(--muted); }
+.navLinks a:hover, .footer a:hover { color: var(--coral); text-decoration: underline; }
+.hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 60px; padding-top: 64px; padding-bottom: 108px; align-items: center; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: var(--coral); margin-bottom: 24px; }
+.hero h1 { font-size: clamp(54px, 6.5vw, 88px); font-weight: 750; letter-spacing: -.065em; line-height: 1.04; }
+.hero h1 span { color: var(--coral); }
+.intro { font-size: 18px; line-height: 1.7; color: var(--muted); max-width: 420px; margin-top: 28px; margin-bottom: 32px; }
+.download, .downloadSmall { display: inline-flex; justify-content: center; align-items: center; gap: 12px; min-height: 54px; padding: 14px 24px; border-radius: 12px; background: var(--coral); color: #fff; font-size: 15px; font-weight: 600; transition: background .18s, transform .18s; }
+.download:hover, .downloadSmall:hover { background: #8c351e; transform: translateY(-2px); }
+.downloadNote { font-size: 12px; line-height: 1.8; color: var(--muted); margin-top: 14px; }
+.setupLink { display: inline-block; margin-top: 26px; font-size: 13px; text-decoration: underline; }
+.heroVisual { position: relative; background: #e9d6c8; border-radius: 48% 48% 22% 22%; padding: 32px 22px 16px; }
+.window { border-radius: 14px; overflow: hidden; border: 1px solid #c4b9aa; background: var(--paper); box-shadow: 0 28px 65px -28px #63412e70; max-width: 430px; margin-inline: auto; }
+.titlebar { height: 32px; display: flex; gap: 6px; align-items: center; padding-inline: 12px; background: #ebe5dc; border-bottom: 1px solid var(--line); position: relative; }
+.titlebar span { width: 9px; height: 9px; border-radius: 50%; background: #d7a08b; }
+.titlebar span:nth-child(2) { background: #d7bf8b; }.titlebar span:nth-child(3) { background: #a6b59a; }
+.titlebar p { position: absolute; left: 50%; transform: translateX(-50%); font-size: 10px; color: var(--muted); }
+.screenshot { width: 100%; height: auto; display: block; }
+.shortcut { display: flex; align-items: center; justify-content: center; gap: 8px; padding-top: 22px; padding-bottom: 6px; }
+.shortcut kbd { font-family: inherit; font-size: 19px; font-weight: 600; padding: 3px 10px; background: var(--paper); border: 1px solid #c3b5a8; border-bottom-width: 3px; border-radius: 7px; }
+.shortcut p { margin-left: 8px; font-size: 12px; font-weight: 600; }
+.benefits { padding-bottom: 100px; }
+.benefits > div { display: grid; grid-template-columns: 40px 1fr 1.05fr; gap: 28px; border-top: 1px solid var(--line); padding: 30px 0; align-items: baseline; }
+.number { font-size: 12px; color: var(--coral); font-family: var(--font-geist-mono), monospace; }
+.benefits h2 { font-size: 22px; font-weight: 600; letter-spacing: -.03em; line-height: 1.35; max-width: 330px; }
+.benefits p { color: var(--muted); font-size: 15px; line-height: 1.75; }
+.install { display: grid; grid-template-columns: 1fr 1.1fr; gap: 90px; padding-block: 72px 100px; border-top: 1px solid var(--line); scroll-margin-top: 25px; }
+.install h2, .credit h2 { font-size: clamp(38px, 4.5vw, 58px); letter-spacing: -.05em; line-height: 1.08; font-weight: 700; }
+.installIntro { margin-top: 24px; margin-bottom: 28px; font-size: 16px; line-height: 1.75; color: var(--muted); max-width: 350px; }
+.steps { list-style: none; padding: 0; }
+.steps li { display: flex; gap: 18px; padding-bottom: 30px; }
+.steps li > span { border: 1px solid var(--line); border-radius: 50%; width: 30px; height: 30px; flex-shrink: 0; display: grid; place-items: center; color: var(--coral); font-size: 13px; }
+.steps h3 { font-size: 19px; font-weight: 600; margin-bottom: 8px; }
+.steps p, .faq p { color: var(--muted); font-size: 15px; line-height: 1.75; }
+.steps a, .faq a, .credit p a { color: var(--coral); text-decoration: underline; }
+.steps code { font-size: 13px; color: var(--ink); background: #eae3d8; padding: 2px 5px; border-radius: 4px; white-space: nowrap; }
+.faq { padding-block: 0 100px; max-width: 800px; }
+.faq h2 { font-size: 34px; font-weight: 650; letter-spacing: -.04em; margin-bottom: 30px; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; padding-block: 22px; font-size: 16px; font-weight: 550; }
+.faq p { padding: 0 0 24px; }
+.credit { padding-block: 56px 64px; background: #ece4d7; border-radius: 24px; max-width: 1104px; padding-inline: 56px; }
+.credit p:not(.eyebrow) { max-width: 630px; font-size: 17px; line-height: 1.8; color: var(--muted); margin-top: 24px; }
+.originalLink { display: inline-block; margin-top: 26px; color: var(--coral); text-decoration: underline; font-size: 14px; }
+.footer { display: flex; justify-content: space-between; gap: 24px; padding-block: 40px; color: var(--muted); font-size: 12px; }
+.skip { position: fixed; top: 10px; left: 10px; z-index: 100; padding: 12px; background: var(--ink); color: #fff; transform: translateY(-160%); }.skip:focus { transform: translateY(0); }
+@media (max-width: 760px) { .nav { min-height: 80px; }.navLinks { gap: 16px; }.sourceLink { display: none; }.hero { grid-template-columns: 1fr; gap: 48px; padding-top: 40px; padding-bottom: 72px; }.hero h1 { font-size: clamp(56px, 12vw, 76px); }.heroVisual { max-width: 440px; width: 100%; margin-inline: auto; }.benefits { padding-bottom: 50px; }.benefits > div { grid-template-columns: 24px 1fr; gap: 18px; }.benefits p { grid-column: 2; }.install { grid-template-columns: 1fr; gap: 40px; padding-block: 50px; }.installIntro { max-width: none; }.faq { padding-bottom: 50px; }.credit { margin-inline: 20px; padding: 36px 24px; }.footer { flex-direction: column; gap: 14px; padding-block: 30px; }.shortcut { flex-wrap: wrap; }.shortcut p { font-size: 11px; } }
+@media (prefers-reduced-motion: reduce) { .download, .downloadSmall { transition: none; }.download:hover, .downloadSmall:hover { transform: none; } }

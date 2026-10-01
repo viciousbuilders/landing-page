@@ -11,6 +11,15 @@ export type App = {
 
 export const apps: App[] = [
   {
+    name: "Pipet",
+    category: "Mac app · Productivity",
+    image: "/pipet/app.png",
+    description:
+      "Hold Control-M, speak, and release. Your words land wherever you type on your Mac.",
+    href: "/pipet",
+    domain: "vietbrosinaus.com/pipet",
+  },
+  {
     name: "Card Table",
     category: "Game",
     image: "/project-screenshots/ban-bai-home.webp",
@@ -33,11 +42,11 @@ export const apps: App[] = [
   {
     name: "PriceCheck AU",
     category: "Shopping",
-    image: "/project-screenshots/price.png",
+    image: "/project-screenshots/price-check-live.webp",
     description:
       "Compare Australian grocery prices side by side and find the best value per unit.",
-    href: "https://price-check-au.vercel.app",
-    domain: "price-check-au.vercel.app",
+    href: "https://price-check.vietbrosinaus.com",
+    domain: "price-check.vietbrosinaus.com",
   },
   {
     name: "Plan2Go",
