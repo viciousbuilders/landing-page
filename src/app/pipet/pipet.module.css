@@ -16,10 +16,12 @@
 .guide { min-height: 44px; display: inline-flex; align-items: center; margin-top: 2px; font-size: 12px; color: var(--coral); text-decoration: underline; }
 .notes { margin-top: 4px; font-size: 11px; color: var(--muted); }
 .footer { padding: 16px 24px 20px; text-align: center; color: var(--muted); font-size: 11px; line-height: 1.8; border-top: 1px solid #d6c8b4; background: #ebddc5; }
+.footerInner { width: min(904px, 100%); margin-inline: auto; display: flex; justify-content: space-between; align-items: center; gap: 24px; text-align: right; }
 .footer a { color: var(--coral); text-decoration: underline; }
-.signature { display: flex; justify-content: center; align-items: center; gap: 5px; margin-bottom: 6px; font-size: 12px; }
+.signature { display: flex; justify-content: center; align-items: center; gap: 5px; flex-shrink: 0; font-size: 12px; }
 .signature svg { height: 15px; width: 18px; color: var(--coral); }.signature a { font-weight: 600; }
 @media (max-height: 700px) { .nav { padding-block: 6px; }.main { padding-block: 12px 20px; }.logo { width: 68px; height: 68px; }.lockup h1 { font-size: 60px; }.main h2 { margin-top: 16px; font-size: 30px; }.description { margin-top: 8px; font-size: 14px; }.download { margin-top: 20px; }.footer { padding-block: 12px 16px; } }
 @media (max-height: 600px) { .main { padding-block: 8px 12px; }.main h2 { margin-top: 12px; }.download { margin-top: 16px; }.footer { padding-block: 10px 12px; } }
-@media (max-width: 480px) { .nav { padding-inline: 24px; }.description { font-size: 14px; }.footer > p { max-width: 330px; margin-inline: auto; } }
+@media (max-width: 640px) { .footerInner { flex-direction: column; gap: 6px; text-align: center; } }
+@media (max-width: 480px) { .nav { padding-inline: 24px; }.description { font-size: 14px; }.footerInner > p { max-width: 330px; margin-inline: auto; } }
 @media (prefers-reduced-motion: reduce) { .download { transition: none; } }
