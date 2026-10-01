@@ -11,11 +11,11 @@ const source = "https://github.com/vietbrosinaus/pipet";
 const release = `${source}/releases/download/v0.3.1/Pipet-0.3.1-universal.dmg`;
 
 export const metadata: Metadata = {
-  title: "Pipet — Say it. See it typed.",
+  title: "Pipet | Say it. See it typed.",
   description: "Free, open-source voice dictation for your Mac. Hold Control-M, speak, and release. Apple-notarized. Made by vietbrosinaus.",
   alternates: { canonical: "https://vietbrosinaus.com/pipet" },
   openGraph: {
-    title: "Pipet — Say it. See it typed.",
+    title: "Pipet | Say it. See it typed.",
     description: "Your voice, wherever you type. Free voice dictation for macOS.",
     url: "https://vietbrosinaus.com/pipet",
     images: [{ url: "https://vietbrosinaus.com/pipet/logo.png", width: 1254, height: 1254, alt: "Pipet’s smiling speech bubble" }],
