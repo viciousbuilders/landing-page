@@ -12,6 +12,7 @@ export type App = {
 export const apps: App[] = [
   {
     name: "Pipet",
+    featured: false,
     category: "Mac app · Productivity",
     image: "/pipet/app.png",
     description:
