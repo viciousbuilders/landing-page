@@ -41,7 +41,6 @@ export default function PipetPage() {
       </a>
       <p className={styles.requirements}>macOS 14+ · Apple silicon & Intel<br />Requires your own Codex CLI sign-in.</p>
       <a href={`${source}#install-the-shared-app`} className={styles.guide}>Setup guide ↗</a>
-      <p className={styles.notes}>Free & open-source · Apple-notarized</p>
     </main>
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
