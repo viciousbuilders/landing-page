@@ -58,14 +58,4 @@ export const apps: App[] = [
     href: "https://plan2go-sandy.vercel.app",
     domain: "plan2go-sandy.vercel.app",
   },
-  {
-    name: "What I Mean",
-    category: "Productivity",
-    image: "/project-screenshots/what-i-mean.jpg",
-    screenshotPatch: "rgb(247 248 252)",
-    description:
-      "Think out loud by text or voice while a thoughtful AI helps you find what really matters.",
-    href: "https://voice-debrief.vercel.app",
-    domain: "voice-debrief.vercel.app",
-  },
 ];
