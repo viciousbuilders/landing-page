@@ -7,7 +7,7 @@ import styles from "./pipet.module.css";
 const display = Baloo_2({ subsets: ["latin", "vietnamese"], variable: "--pipet-display", display: "swap" });
 const body = Be_Vietnam_Pro({ subsets: ["latin", "vietnamese"], weight: ["400", "500", "600"], variable: "--pipet-body", display: "swap" });
 
-const source = "https://github.com/vietbrosinaus/pipet";
+const source = "https://github.com/viciousbuilders/pipet";
 const release = `${source}/releases/download/v0.3.1/Pipet-0.3.1-universal.dmg`;
 
 export const metadata: Metadata = {
