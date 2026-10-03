@@ -4,6 +4,7 @@ import ThemeToggle from "../theme-toggle";
 import { projectIdeas } from "./ideas";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/ideas" },
   title: "Project ideas | viciousbuilders",
   description:
     "Ideas we want to build with the community. Find a project to contribute to or bring an idea of your own.",

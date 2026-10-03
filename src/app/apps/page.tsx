@@ -5,6 +5,7 @@ import { allApps } from "../apps";
 import ThemeToggle from "../theme-toggle";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/apps" },
   title: "All apps | viciousbuilders",
   description: "Explore all free and open-source apps built by viciousbuilders.",
 };
