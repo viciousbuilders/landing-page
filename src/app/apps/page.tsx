@@ -5,8 +5,8 @@ import { allApps } from "../apps";
 import ThemeToggle from "../theme-toggle";
 
 export const metadata: Metadata = {
-  title: "All apps | vietbrosinaus",
-  description: "Explore all free and open-source apps built by vietbrosinaus.",
+  title: "All apps | viciousbuilders",
+  description: "Explore all free and open-source apps built by viciousbuilders.",
 };
 
 export default function AppsPage() {
@@ -16,11 +16,11 @@ export default function AppsPage() {
         <div className="max-w-[1200px] mx-auto px-6 h-16 sm:h-[4.5rem] flex items-center justify-between">
           <Link
             href="/"
-            aria-label="Viet Bros in Australia home"
+            aria-label="viciousbuilders home"
             className="flex items-center gap-2.5 sm:gap-3 font-mono text-sm sm:text-base tracking-tight font-medium"
           >
             <span className="brand-mark sm:hidden" aria-hidden="true" />
-            <span className="hidden sm:inline">vietbrosinaus</span>
+            <span className="hidden sm:inline">viciousbuilders</span>
           </Link>
           <div className="flex items-center gap-5 sm:gap-9 font-mono text-xs sm:text-sm tracking-wide text-muted">
             <Link href="/" className="nav-link hover:text-foreground transition-colors duration-300">
@@ -70,7 +70,7 @@ export default function AppsPage() {
       <footer className="px-6 max-w-[1200px] w-full mx-auto py-8 border-t footer-divider">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <span className="font-mono text-xs text-muted">
-            vietbrosinaus &copy; {new Date().getFullYear()}
+            viciousbuilders &copy; {new Date().getFullYear()}
           </span>
           <p className="flex items-center gap-1 font-mono text-xs text-muted">
             <span>Made with</span>

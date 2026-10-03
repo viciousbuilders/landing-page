@@ -56,9 +56,9 @@ const support = [
 
 const faqs = [
   {
-    question: "Is this only for Vietnamese developers in Australia?",
+    question: "Who can join viciousbuilders?",
     answer:
-      "Nope! Most of us happen to be Vietnamese developers right now, but everyone’s welcome. VietBrosInAus is where we started—and as the community grows, we might even change the name to better reflect everyone in it.",
+      "Everyone’s welcome. Our community started with Vietnamese developers in Australia, and viciousbuilders is open to people of every background who want to build, learn, and help each other.",
   },
   {
     question: "What costs can you help with?",
@@ -136,11 +136,11 @@ export default async function Home() {
         <div className="max-w-[1200px] mx-auto px-6 h-16 sm:h-[4.5rem] flex items-center justify-between">
           <Link
             href="/"
-            aria-label="Viet Bros in Australia home"
+            aria-label="viciousbuilders home"
             className="flex items-center gap-2.5 sm:gap-3 font-mono text-sm sm:text-base tracking-tight font-medium"
           >
             <span className="brand-mark sm:hidden" aria-hidden="true" />
-            <span className="hidden sm:inline">vietbrosinaus</span>
+            <span className="hidden sm:inline">viciousbuilders</span>
           </Link>
           <div className="flex items-center gap-5 sm:gap-9 font-mono text-xs sm:text-sm tracking-wide text-muted">
             <a href="#apps" className="nav-link hover:text-foreground transition-colors duration-300">
@@ -167,12 +167,11 @@ export default async function Home() {
         <div className="relative z-10 w-full max-w-[1200px] mx-auto px-6">
           <div className="hero-copy pt-16 sm:pt-[4.5rem]">
             <h1 className="animate-fade-up text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] mb-8">
-              <span className="hero-title">vietbros</span>
-              <br />
-              <span className="text-muted">inaus</span>
+              <span className="hero-title">vicious</span>
+              <span className="block text-muted">builders</span>
             </h1>
             <p className="animate-fade-up delay-2 max-w-lg text-lg md:text-xl leading-relaxed text-muted">
-              We&apos;re Vietnamese devs based in Australia who believe useful
+              We&apos;re a community of builders who believe useful
               software should be free. Everything we build is open-source and
               made for real people.
             </p>
@@ -506,7 +505,7 @@ export default async function Home() {
       <footer className="px-6 max-w-[1200px] mx-auto py-8 border-t footer-divider">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <span className="font-mono text-xs text-muted">
-            vietbrosinaus &copy; {new Date().getFullYear()}
+            viciousbuilders &copy; {new Date().getFullYear()}
           </span>
           <p className="flex items-center gap-1 font-mono text-xs text-muted">
             <span>Made with</span>
