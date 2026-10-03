@@ -10,8 +10,14 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/:path*",
-        has: [{ type: "host", value: "karaoke-now.vietbrosinaus.com" }],
+        has: [{ type: "host", value: "karaoke-now\\.(?:vietbrosinaus|viciousbuilders)\\.com" }],
         destination: "https://www.karaokenow.co/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "(?:www\\.)?vietbrosinaus\\.com|www\\.viciousbuilders\\.com" }],
+        destination: "https://viciousbuilders.com/:path*",
         permanent: true,
       },
     ];

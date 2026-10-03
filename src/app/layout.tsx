@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://viciousbuilders.com"),
+  alternates: { canonical: "/" },
   title: "viciousbuilders",
   description:
     "viciousbuilders is a community building free, open-source apps for real people. Everyone’s welcome.",

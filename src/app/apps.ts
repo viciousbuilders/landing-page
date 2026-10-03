@@ -18,7 +18,7 @@ export const apps: App[] = [
     description:
       "Hold Control-M, speak, and release. Your words land wherever you type on your Mac.",
     href: "/pipet",
-    domain: "vietbrosinaus.com/pipet",
+    domain: "viciousbuilders.com/pipet",
   },
   {
     name: "Card Table",
@@ -26,8 +26,8 @@ export const apps: App[] = [
     image: "/project-screenshots/ban-bai-home.webp",
     description:
       "Create a private card table, invite friends by link, and play with a classic deck or Sanguosha cards.",
-    href: "https://card-table.vietbrosinaus.com",
-    domain: "card-table.vietbrosinaus.com",
+    href: "https://card-table.viciousbuilders.com",
+    domain: "card-table.viciousbuilders.com",
   },
   {
     name: "Karaoke Now",
@@ -37,8 +37,8 @@ export const apps: App[] = [
       "linear-gradient(135deg, rgb(7 8 12) 0%, rgb(10 10 17) 100%)",
     description:
       "Open a room, queue a song, and sing together from anywhere.",
-    href: "https://karaoke-now.vietbrosinaus.com",
-    domain: "karaoke-now.vietbrosinaus.com",
+    href: "https://karaoke-now.viciousbuilders.com",
+    domain: "karaoke-now.viciousbuilders.com",
   },
   {
     name: "PriceCheck AU",
@@ -46,8 +46,8 @@ export const apps: App[] = [
     image: "/project-screenshots/price-check-live.webp",
     description:
       "Compare Australian grocery prices side by side and find the best value per unit.",
-    href: "https://price-check.vietbrosinaus.com",
-    domain: "price-check.vietbrosinaus.com",
+    href: "https://price-check.viciousbuilders.com",
+    domain: "price-check.viciousbuilders.com",
   },
   {
     name: "Plan2Go",
