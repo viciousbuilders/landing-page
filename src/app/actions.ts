@@ -13,9 +13,9 @@ export async function sendMessage(formData: FormData) {
 
   try {
     const { error } = await resend.emails.send({
-      from: "vietbrosinaus <contact@vietbrosinaus.com>",
+      from: "viciousbuilders <contact@vietbrosinaus.com>",
       to: "vietbrosinaus@gmail.com",
-      subject: "New message from vietbrosinaus.com",
+      subject: "New message from viciousbuilders",
       text: message.trim(),
     });
 

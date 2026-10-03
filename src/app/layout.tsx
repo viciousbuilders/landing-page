@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "vietbrosinaus",
+  title: "viciousbuilders",
   description:
-    "One of the most cracked dev teams providing actual free apps that actually benefit people.",
+    "viciousbuilders is a community building free, open-source apps for real people. Everyone’s welcome.",
 };
 
 export default function RootLayout({
