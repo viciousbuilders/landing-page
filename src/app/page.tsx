@@ -364,6 +364,15 @@ export default async function Home() {
                 <path d="M12 5v14M19 12l-7 7-7-7" />
               </svg>
             </a>
+            <Link
+              href="/ideas"
+              className="mt-4 flex min-h-11 w-fit items-center gap-2 font-mono text-sm underline underline-offset-4 decoration-border hover:decoration-foreground transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4"
+            >
+              Explore project ideas
+              <svg aria-hidden="true" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
 
