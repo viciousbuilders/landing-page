@@ -120,7 +120,7 @@ export default function IdeasPage() {
       <footer className="px-6 max-w-[1200px] w-full mx-auto py-8 border-t footer-divider">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <span className="font-mono text-xs text-muted">
-            viciousbuilders &copy; {new Date().getFullYear()}
+            Vicious Builders Collective &copy; {new Date().getFullYear()}
           </span>
           <p className="flex items-center gap-1 font-mono text-xs text-muted">
             <span>Made with</span>
