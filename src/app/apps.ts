@@ -55,8 +55,8 @@ export const apps: App[] = [
     image: "/project-screenshots/plan2go-live.jpg",
     description:
       "Build a realistic multi-day itinerary with travel time, opening hours, and maps.",
-    href: "https://plan2go-sandy.vercel.app",
-    domain: "plan2go-sandy.vercel.app",
+    href: "https://plan2go.vietbrosinaus.com/",
+    domain: "plan2go.vietbrosinaus.com",
   },
   {
     name: "What I Mean",
@@ -68,4 +68,12 @@ export const apps: App[] = [
     href: "https://voice-debrief.vercel.app",
     domain: "voice-debrief.vercel.app",
   },
+];
+
+// Keep the homepage selection and the start of the full catalog in sync.
+export const featuredApps = apps.filter((app) => app.featured !== false).slice(0, 4);
+
+export const allApps = [
+  ...featuredApps,
+  ...apps.filter((app) => !featuredApps.includes(app)),
 ];

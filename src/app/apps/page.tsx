@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AppCard from "../app-card";
-import { apps } from "../apps";
+import { allApps } from "../apps";
 import ThemeToggle from "../theme-toggle";
 
 export const metadata: Metadata = {
@@ -61,7 +61,7 @@ export default function AppsPage() {
         </header>
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-5">
-          {apps.map((app, i) => (
+          {allApps.map((app, i) => (
             <AppCard key={app.name} app={app} index={i} />
           ))}
         </div>
