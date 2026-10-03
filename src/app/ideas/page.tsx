@@ -20,8 +20,7 @@ export default function IdeasPage() {
             aria-label="viciousbuilders home"
             className="flex items-center gap-2.5 sm:gap-3 font-mono text-sm sm:text-base tracking-tight font-medium"
           >
-            <span className="brand-mark sm:hidden" aria-hidden="true" />
-            <span className="hidden sm:inline">viciousbuilders</span>
+            <span className="brand-mark" aria-hidden="true" />
           </Link>
           <div className="flex items-center gap-5 sm:gap-9 font-mono text-xs sm:text-sm tracking-wide text-muted">
             <Link href="/#build" className="nav-link min-h-11 inline-flex items-center hover:text-foreground transition-colors duration-300">
