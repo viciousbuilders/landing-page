@@ -37,8 +37,8 @@ export const apps: App[] = [
       "linear-gradient(135deg, rgb(7 8 12) 0%, rgb(10 10 17) 100%)",
     description:
       "Open a room, queue a song, and sing together from anywhere.",
-    href: "https://karaoke-now.viciousbuilders.com",
-    domain: "karaoke-now.viciousbuilders.com",
+    href: "https://karaokenow.co",
+    domain: "karaokenow.co",
   },
   {
     name: "PriceCheck AU",
@@ -57,6 +57,16 @@ export const apps: App[] = [
       "Build a realistic multi-day itinerary with travel time, opening hours, and maps.",
     href: "https://plan2go.vietbrosinaus.com/",
     domain: "plan2go.vietbrosinaus.com",
+  },
+  {
+    name: "PopPopAI",
+    featured: false,
+    category: "iPhone app · Language learning",
+    image: "/project-screenshots/poppopai-live.png",
+    description:
+      "Practice English or Chinese through real-life conversations with AI characters, and learn vocabulary from photos.",
+    href: "https://acmenextjs-production-b9db.up.railway.app",
+    domain: "acmenextjs-production-b9db.up.railway.app",
   },
 ];
 
