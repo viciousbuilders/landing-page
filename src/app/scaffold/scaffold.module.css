@@ -1,0 +1,50 @@
+.page {
+  --ink: #30271f;
+  --quiet: #75685b;
+  --line: #dfd5c8;
+  min-height: 100svh;
+  background: #f5f1eb;
+  color: var(--ink);
+}
+.nav, .footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--quiet);
+}
+.nav a, .guide, .footer a {
+  text-underline-offset: 4px;
+}
+.nav a:hover, .guide:hover, .footer a:hover { text-decoration: underline; }
+.page a:focus-visible { outline: 2px solid #b84e1d; outline-offset: 5px; }
+.main { max-width: 1120px; margin: 0 auto; padding: 0 30px; }
+.intro { text-align: center; padding: 48px 0 42px; }
+.lockup { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 22px; font-size: 22px; font-weight: 600; letter-spacing: -0.6px; }
+.lockup img { border-radius: 13px; }
+.intro h1 { font-size: clamp(34px, 5vw, 54px); line-height: 1.12; letter-spacing: -2px; font-weight: 600; margin-bottom: 18px; }
+.description { font-size: 17px; line-height: 1.6; color: var(--quiet); margin-bottom: 26px; }
+.download { display: inline-flex; align-items: center; justify-content: center; background: #b94d1c; color: #fffaf5; min-height: 46px; padding: 0 23px; border-radius: 8px; font-size: 14px; font-weight: 600; transition: background 150ms; }
+.download:hover { background: #a43f13; }
+.requirements { font-size: 12px; color: var(--quiet); margin: 12px 0 10px; }
+.guide { font-size: 13px; }
+.preview { margin: 0; }
+.preview img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; }
+.preview figcaption { text-align: center; color: var(--quiet); font-size: 12px; padding-top: 13px; }
+.workflow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 42px; padding: 55px 0; margin-top: 26px; border-top: 1px solid var(--line); }
+.workflow h2 { font-size: 16px; font-weight: 600; margin-bottom: 10px; }
+.workflow p { font-size: 14px; line-height: 1.75; color: var(--quiet); }
+.footer { border-top: 1px solid var(--line); gap: 4px; justify-content: flex-start; }
+.footer span { margin-left: auto; font-size: 12px; }
+@media (max-width: 640px) {
+  .nav, .footer { padding: 22px 20px; }
+  .main { padding: 0 20px; }
+  .intro { padding: 35px 0; }
+  .intro h1 { letter-spacing: -1px; }
+  .description { font-size: 16px; }
+  .requirements { font-size: 11px; }
+  .workflow { grid-template-columns: 1fr; gap: 28px; padding: 35px 0; }
+}

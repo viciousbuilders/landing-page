@@ -11,6 +11,15 @@ export type App = {
 
 export const apps: App[] = [
   {
+    name: "Scaffold",
+    category: "Mac app · Learning",
+    image: "/scaffold/app.png",
+    description:
+      "Practise coding, math and quant questions in a local workspace, with hints from your own AI CLI.",
+    href: "/scaffold",
+    domain: "viciousbuilders.com/scaffold",
+  },
+  {
     name: "Pipet",
     featured: false,
     category: "Mac app · Productivity",
