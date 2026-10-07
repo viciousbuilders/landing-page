@@ -5,30 +5,11 @@ export type App = {
   description: string;
   href: string;
   domain: string;
-  featured?: boolean;
   screenshotPatch?: string;
 };
 
+// Catalog order is deliberate: append new apps at the bottom.
 export const apps: App[] = [
-  {
-    name: "Scaffold",
-    category: "Mac app · Learning",
-    image: "/scaffold/app.png",
-    description:
-      "Practise coding, math and quant questions in a local workspace, with hints from your own AI CLI.",
-    href: "/scaffold",
-    domain: "viciousbuilders.com/scaffold",
-  },
-  {
-    name: "Pipet",
-    featured: false,
-    category: "Mac app · Productivity",
-    image: "/pipet/app.png",
-    description:
-      "Hold Control-M, speak, and release. Your words land wherever you type on your Mac.",
-    href: "/pipet",
-    domain: "viciousbuilders.com/pipet",
-  },
   {
     name: "Card Table",
     category: "Game",
@@ -59,6 +40,15 @@ export const apps: App[] = [
     domain: "price-check.viciousbuilders.com",
   },
   {
+    name: "Pipet",
+    category: "Mac app · Productivity",
+    image: "/pipet/app.png",
+    description:
+      "Hold Control-M, speak, and release. Your words land wherever you type on your Mac.",
+    href: "/pipet",
+    domain: "viciousbuilders.com/pipet",
+  },
+  {
     name: "Plan2Go",
     category: "Travel",
     image: "/project-screenshots/plan2go-live.jpg",
@@ -69,7 +59,6 @@ export const apps: App[] = [
   },
   {
     name: "PopPopAI",
-    featured: false,
     category: "iPhone app · Language learning",
     image: "/project-screenshots/poppopai-live.png",
     description:
@@ -77,12 +66,21 @@ export const apps: App[] = [
     href: "https://acmenextjs-production-b9db.up.railway.app",
     domain: "acmenextjs-production-b9db.up.railway.app",
   },
+  {
+    name: "Scaffold",
+    category: "Mac app · Learning",
+    image: "/scaffold/app.png",
+    description:
+      "Practise coding, math and quant questions in a local workspace, with hints from your own AI CLI.",
+    href: "/scaffold",
+    domain: "viciousbuilders.com/scaffold",
+  },
 ];
 
-// Keep the homepage selection and the start of the full catalog in sync.
-export const featuredApps = apps.filter((app) => app.featured !== false).slice(0, 4);
+// Homepage curation is independent of the full catalog's display order.
+const featuredAppNames = ["Scaffold", "Card Table", "Karaoke Now", "PriceCheck AU"];
+export const featuredApps = featuredAppNames.flatMap((name) =>
+  apps.filter((app) => app.name === name),
+);
 
-export const allApps = [
-  ...featuredApps,
-  ...apps.filter((app) => !featuredApps.includes(app)),
-];
+export const allApps = apps;
