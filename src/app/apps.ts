@@ -2,11 +2,11 @@ export type App = {
   name: string;
   category: string;
   image: string;
+  imageAlt?: string;
   description: string;
   href: string;
   domain: string;
   screenshotPatch?: string;
-  previewFit?: "cover" | "contain";
 };
 
 // Catalog order is deliberate: append new apps at the bottom.
@@ -70,7 +70,8 @@ export const apps: App[] = [
   {
     name: "Scaffold",
     category: "Mac app · Learning",
-    image: "/scaffold/app.png",
+    image: "/project-screenshots/scaffold-landing.png",
+    imageAlt: "Scaffold landing page with its practice workspace preview",
     description:
       "Practise coding, math and quant questions in a local workspace, with hints from your own AI CLI.",
     href: "/scaffold",
@@ -79,8 +80,8 @@ export const apps: App[] = [
   {
     name: "Still",
     category: "Mac app · Productivity",
-    image: "/still/app.png",
-    previewFit: "contain",
+    image: "/project-screenshots/still-landing.png",
+    imageAlt: "Still landing page with its website blocker preview",
     description:
       "Block distracting websites from your Mac’s menu bar. Set a focus timer or keep your blocklist always on.",
     href: "/still",

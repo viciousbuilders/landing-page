@@ -18,12 +18,12 @@ export default function AppCard({ app, index }: AppCardProps) {
       <div className="project-preview">
         <Image
           src={app.image}
-          alt={`${app.name} app interface`}
+          alt={app.imageAlt ?? `${app.name} app interface`}
           width={1280}
           height={720}
           sizes="(min-width: 768px) 50vw, 100vw"
           loading={index === 0 ? "eager" : "lazy"}
-          className={`h-full w-full ${app.previewFit === "contain" ? "object-contain p-4" : "object-cover object-top"}`}
+          className="h-full w-full object-cover object-top"
         />
         {app.screenshotPatch && (
           <span
