@@ -1,0 +1,173 @@
+/* Keep the existing product-page structure, with Still's green accent.
+   The preview is the actual native popover, including its blocking controls. */
+.page {
+  --paper: #f4f6f4;
+  --ink: #202622;
+  --soft: #526159;
+  --green: #105f50;
+  --green-hover: #0c4b3f;
+  --hair: #d7dfd9;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  color-scheme: light;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+.page a:focus-visible, .page summary:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 5px;
+}
+.nav {
+  width: min(1040px, 100%);
+  margin-inline: auto;
+  padding: 14px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--soft);
+  font-size: 13px;
+}
+.nav a:hover { color: var(--green); }
+.main {
+  width: min(1040px, 100%);
+  margin: auto;
+  padding: 52px 28px 64px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
+  align-items: center;
+  gap: 88px;
+}
+.lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.logo { width: 64px; height: 64px; }
+.lockup span {
+  font-size: 36px;
+  font-weight: 650;
+  letter-spacing: -.045em;
+}
+.copy h1 {
+  max-width: 14ch;
+  font-size: clamp(40px, 4.5vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -.045em;
+  font-weight: 600;
+  text-wrap: balance;
+}
+.description {
+  max-width: 36ch;
+  margin-top: 22px;
+  color: var(--soft);
+  font-size: 17px;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+.persistence {
+  max-width: 36ch;
+  margin-top: 16px;
+  color: var(--soft);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.actions { margin-top: 28px; }
+.primary {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: var(--green);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 180ms, transform 180ms;
+}
+.primary:hover { background: var(--green-hover); }
+.primary:active { transform: translateY(1px); }
+.requirements {
+  margin-top: 12px;
+  color: var(--soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.details {
+  max-width: 40ch;
+  margin-top: 20px;
+  color: var(--soft);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.details summary {
+  min-height: 44px;
+  padding-block: 10px;
+  cursor: pointer;
+  color: var(--green);
+}
+.details p { margin-top: 4px; }
+.details a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.preview { width: 100%; max-width: 380px; }
+.preview img { display: block; width: 100%; height: auto; }
+.footer {
+  width: min(984px, calc(100% - 56px));
+  margin-inline: auto;
+  padding: 24px 0;
+  border-top: 1px solid var(--hair);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  color: var(--soft);
+  font-size: 12px;
+}
+.signature { display: flex; align-items: center; gap: 5px; }
+.signature :global(.footer-heart), .signature a { color: var(--green); }
+.signature a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 899px) {
+  .main {
+    max-width: 640px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+    padding-top: 36px;
+  }
+  .copy { max-width: 440px; }
+  .preview { max-width: 360px; justify-self: center; }
+}
+@media (max-width: 480px) {
+  .nav { padding-inline: 24px; }
+  .main { padding: 28px 24px 40px; }
+  .copy h1 { font-size: 40px; }
+  .lockup { margin-bottom: 24px; }
+  .logo { width: 56px; height: 56px; }
+  .lockup span { font-size: 32px; }
+  .footer { width: calc(100% - 48px); flex-direction: column; gap: 4px; padding: 20px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .primary { transition: none; }
+  .primary:active { transform: none; }
+}

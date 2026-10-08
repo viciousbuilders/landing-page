@@ -6,6 +6,7 @@ export type App = {
   href: string;
   domain: string;
   screenshotPatch?: string;
+  previewFit?: "cover" | "contain";
 };
 
 // Catalog order is deliberate: append new apps at the bottom.
@@ -75,10 +76,20 @@ export const apps: App[] = [
     href: "/scaffold",
     domain: "viciousbuilders.com/scaffold",
   },
+  {
+    name: "Still",
+    category: "Mac app · Productivity",
+    image: "/still/app.png",
+    previewFit: "contain",
+    description:
+      "Block distracting websites from your Mac’s menu bar. Set a focus timer or keep your blocklist always on.",
+    href: "/still",
+    domain: "viciousbuilders.com/still",
+  },
 ];
 
-// Homepage curation is independent of the full catalog's display order.
-const featuredAppNames = ["Scaffold", "Card Table", "Karaoke Now", "PriceCheck AU"];
+// Fixed homepage selection, independent of the full catalog's display order.
+const featuredAppNames = ["Card Table", "Karaoke Now", "PriceCheck AU", "Plan2Go"];
 export const featuredApps = featuredAppNames.flatMap((name) =>
   apps.filter((app) => app.name === name),
 );
