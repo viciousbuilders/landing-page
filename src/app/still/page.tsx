@@ -52,10 +52,11 @@ export default function StillPage() {
             <summary>How blocking works</summary>
             <p>
               Still blocks listed domains and their www versions using your
-              Mac’s hosts file. Add other subdomains separately. Browsers can
-              keep cached connections, so quit and reopen your browser if a
-              blocked website still loads. Secure DNS, VPNs, and proxies can
-              bypass the block.
+              Mac’s hosts file and firewall, including existing connections to
+              blocked servers. Already downloaded content can remain visible.
+              Add other subdomains separately. Shared server addresses can
+              affect other websites, and VPNs, proxies, or different DNS
+              results can bypass the block.
             </p>
             <a href={`${source}#blocking-behavior`}>Read about blocking ↗</a>
           </details>
