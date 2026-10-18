@@ -8,11 +8,11 @@ const source = "https://github.com/viciousbuilders/still";
 export const metadata: Metadata = {
   title: "Still | Block distracting websites on your Mac",
   description:
-    "A free, open-source website blocker in your Mac’s menu bar. Set a focus timer or keep your blocklist always on. Turn it off whenever you want.",
+    "A free, open-source Mac focus timer and website blocker. Organize block groups, automate study breaks with one approval, and grow a virtual garden.",
   alternates: { canonical: "https://viciousbuilders.com/still" },
   openGraph: {
     title: "Still | Block distracting websites on your Mac",
-    description: "A focus timer or an always-on blocklist, right in your menu bar.",
+    description: "Block groups, focus cycles, and a small virtual garden, right in your Mac’s menu bar.",
     url: "https://viciousbuilders.com/still",
     images: [{ url: "https://viciousbuilders.com/still/icon.png", width: 512, height: 512, alt: "Still’s green leaf icon" }],
   },
@@ -34,11 +34,12 @@ export default function StillPage() {
           </div>
           <h1>A little less distraction.</h1>
           <p className={styles.description}>
-            Block distracting websites from your Mac’s menu bar. Set a focus
-            timer or keep your blocklist always on. Stop whenever you’re ready.
+            Keep distractions blocked. Let study sites open for breaks.
+            Grow a virtual garden as you focus.
           </p>
           <p className={styles.persistence}>
-            Your blocklist stays active even when Still is closed.
+            One Touch ID approval covers a whole focus cycle. Always blocked
+            groups stay on throughout, even when Still is closed.
           </p>
           <div className={styles.actions}>
             <a href={`${source}#build-and-open`} aria-describedby="still-requirements" className={styles.primary}>
@@ -48,6 +49,20 @@ export default function StillPage() {
               macOS 13+ · Build from source for now
             </p>
           </div>
+          <details className={styles.details}>
+            <summary>Groups, breaks, and trees</summary>
+            <p>
+              Keep Facebook, TikTok, and Threads in Always blocked. Put
+              Instagram, LinkedIn, and X in Study. Choose 25/5 or 50/10
+              focus cycles, and Still handles the breaks. Each 25 recorded
+              focus minutes grows a virtual tree; partial progress carries over.
+            </p>
+            <p>
+              Touch ID uses your Mac password as a fallback. Administrator
+              setup is required once; Macs without Touch ID use administrator
+              approval. Your garden stays on this Mac.
+            </p>
+          </details>
           <details className={styles.details}>
             <summary>How blocking works</summary>
             <p>
@@ -65,9 +80,9 @@ export default function StillPage() {
         <figure className={styles.preview}>
           <Image
             src="/still/app.png"
-            alt="Still’s menu bar panel with three websites, an Always on duration, and a Start blocking button."
-            width={812}
-            height={1052}
+            alt="Still’s Focus panel with the Study group, 25/5 focus and break durations, four rounds, and progress toward a virtual tree."
+            width={800}
+            height={1240}
             preload
             sizes="(min-width: 900px) 380px, (min-width: 460px) 360px, calc(100vw - 48px)"
           />

@@ -84,7 +84,7 @@ export const apps: App[] = [
     image: "/project-screenshots/still-landing.png",
     imageAlt: "Still landing page with its website blocker preview",
     description:
-      "Block distracting websites from your Mac’s menu bar. Set a focus timer or keep your blocklist always on.",
+      "Block websites in groups, take automatic study breaks, and grow a virtual garden with your focus time.",
     href: "/still",
     domain: "viciousbuilders.com/still",
   },

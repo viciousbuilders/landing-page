@@ -125,7 +125,13 @@
   text-underline-offset: 4px;
 }
 .preview { width: 100%; max-width: 380px; }
-.preview img { display: block; width: 100%; height: auto; }
+.preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--hair);
+  border-radius: 12px;
+}
 .footer {
   width: min(984px, calc(100% - 56px));
   margin-inline: auto;
