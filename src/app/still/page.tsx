@@ -79,7 +79,7 @@ export default function StillPage() {
 
         <figure className={styles.preview}>
           <Image
-            src="/still/app.png"
+            src="/still/focus.png"
             alt="Still’s Focus panel with the Study group, 25/5 focus and break durations, four rounds, and progress toward a virtual tree."
             width={800}
             height={1240}
