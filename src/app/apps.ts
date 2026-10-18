@@ -81,7 +81,7 @@ export const apps: App[] = [
   {
     name: "Still",
     category: "Mac app · Productivity",
-    image: "/project-screenshots/still-landing.png",
+    image: "/project-screenshots/still-focus-landing.png",
     imageAlt: "Still landing page with its website blocker preview",
     description:
       "Block websites in groups, take automatic study breaks, and grow a virtual garden with your focus time.",
