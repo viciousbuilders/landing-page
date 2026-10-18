@@ -43,10 +43,10 @@ export const apps: App[] = [
   {
     name: "Pipet",
     category: "Mac app · Productivity",
-    image: "/project-screenshots/pipet-landing.png",
+    image: "/project-screenshots/pipet-right-command-landing.png",
     imageAlt: "Pipet landing page with its voice dictation download and setup links",
     description:
-      "Hold Control-M, speak, and release. Your words land wherever you type on your Mac.",
+      "Hold Right Command, speak, and release. Press Esc to cancel. Your words land wherever you type on your Mac.",
     href: "/pipet",
     domain: "viciousbuilders.com/pipet",
   },

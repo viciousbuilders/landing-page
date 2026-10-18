@@ -8,15 +8,15 @@ const display = Baloo_2({ subsets: ["latin", "vietnamese"], variable: "--pipet-d
 const body = Be_Vietnam_Pro({ subsets: ["latin", "vietnamese"], weight: ["400", "500", "600"], variable: "--pipet-body", display: "swap" });
 
 const source = "https://github.com/viciousbuilders/pipet";
-const release = `${source}/releases/download/v0.3.1/Pipet-0.3.1-universal.dmg`;
+const release = `${source}/releases/download/v0.3.3/Pipet-0.3.3-universal.dmg`;
 
 export const metadata: Metadata = {
   title: "Pipet | Say it. See it typed.",
-  description: "Free, open-source voice dictation for your Mac. Hold Control-M, speak, and release. Apple-notarized. Made by viciousbuilders.",
+  description: "Free, open-source voice dictation for your Mac. Hold Right Command, speak, and release. Esc cancels. Apple-notarized. Made by viciousbuilders.",
   alternates: { canonical: "https://viciousbuilders.com/pipet" },
   openGraph: {
     title: "Pipet | Say it. See it typed.",
-    description: "Your voice, wherever you type. Free voice dictation for macOS.",
+    description: "Hold Right Command, speak, and release to type. Esc cancels. Free voice dictation for macOS.",
     url: "https://viciousbuilders.com/pipet",
     images: [{ url: "https://viciousbuilders.com/pipet/logo.png", width: 1254, height: 1254, alt: "Pipet’s smiling speech bubble" }],
   },
@@ -34,12 +34,12 @@ export default function PipetPage() {
         <h1>Pipet</h1>
       </div>
       <h2>Say it. See it typed.</h2>
-      <p className={styles.description}>Hold Control-M, speak, and release.<br />Your words land wherever you type on your Mac.</p>
+      <p className={styles.description}>Hold Right Command (⌘), speak, and release.<br />Your words land wherever you type on your Mac.<br />Press Esc while holding to cancel.</p>
       <a href={release} className={styles.download}>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" /></svg>
         Download for Mac
       </a>
-      <p className={styles.requirements}>macOS 14+ · Apple silicon & Intel<br />Requires your own Codex CLI sign-in.</p>
+      <p className={styles.requirements}>v0.3.3 · Apple-notarized<br />macOS 14+ · Apple silicon & Intel<br />Requires your own Codex CLI sign-in.</p>
       <a href={`${source}#install-the-shared-app`} className={styles.guide}>Setup guide ↗</a>
     </main>
     <footer className={styles.footer}>
