@@ -7,6 +7,8 @@ export type App = {
   href: string;
   domain: string;
   screenshotPatch?: string;
+  // GitHub handles, lead builder first.
+  builders: string[];
 };
 
 // Catalog order is deliberate: append new apps at the bottom.
@@ -19,6 +21,7 @@ export const apps: App[] = [
       "Create a private card table, invite friends by link, and play with a classic deck or Sanguosha cards.",
     href: "https://card-table.viciousbuilders.com",
     domain: "card-table.viciousbuilders.com",
+    builders: ["elvistranhere", "Theskrtnerd"],
   },
   {
     name: "Karaoke Now",
@@ -30,6 +33,7 @@ export const apps: App[] = [
       "Open a room, queue a song, and sing together from anywhere.",
     href: "https://karaokenow.co",
     domain: "karaokenow.co",
+    builders: ["elvistranhere", "Theskrtnerd"],
   },
   {
     name: "PriceCheck AU",
@@ -39,6 +43,7 @@ export const apps: App[] = [
       "Compare Australian grocery prices side by side and find the best value per unit.",
     href: "https://price-check.viciousbuilders.com",
     domain: "price-check.viciousbuilders.com",
+    builders: ["TNT57", "Theskrtnerd"],
   },
   {
     name: "Pipet",
@@ -49,6 +54,7 @@ export const apps: App[] = [
       "Hold Right Command, speak, and release. Press Esc to cancel. Your words land wherever you type on your Mac.",
     href: "/pipet",
     domain: "viciousbuilders.com/pipet",
+    builders: ["Theskrtnerd"],
   },
   {
     name: "Plan2Go",
@@ -58,6 +64,7 @@ export const apps: App[] = [
       "Build a realistic multi-day itinerary with travel time, opening hours, and maps.",
     href: "https://plan2go.vietbrosinaus.com/",
     domain: "plan2go.vietbrosinaus.com",
+    builders: ["DoTRung1023"],
   },
   {
     name: "PopPopAI",
@@ -67,6 +74,7 @@ export const apps: App[] = [
       "Practice English or Chinese through real-life conversations with AI characters, and learn vocabulary from photos.",
     href: "https://acmenextjs-production-b9db.up.railway.app",
     domain: "acmenextjs-production-b9db.up.railway.app",
+    builders: ["nguyenhoangminh1106"],
   },
   {
     name: "Scaffold",
@@ -77,6 +85,7 @@ export const apps: App[] = [
       "Practise coding, math and quant questions in a local workspace, with hints from your own AI CLI.",
     href: "/scaffold",
     domain: "viciousbuilders.com/scaffold",
+    builders: ["Theskrtnerd"],
   },
   {
     name: "Still",
@@ -87,6 +96,7 @@ export const apps: App[] = [
       "Block websites in groups, take automatic study breaks, and grow a virtual garden with your focus time.",
     href: "/still",
     domain: "viciousbuilders.com/still",
+    builders: ["Theskrtnerd"],
   },
 ];
 
