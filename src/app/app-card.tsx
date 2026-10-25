@@ -1,6 +1,5 @@
 import Image from "next/image";
 import type { App } from "./apps";
-import { avatarUrl, builderByGithub } from "./builders";
 
 type AppCardProps = {
   app: App;
@@ -8,11 +7,6 @@ type AppCardProps = {
 };
 
 export default function AppCard({ app, index }: AppCardProps) {
-  const appBuilders = app.builders.flatMap((github) => {
-    const builder = builderByGithub.get(github);
-    return builder ? [builder] : [];
-  });
-
   return (
     <a
       href={app.href}
@@ -50,26 +44,6 @@ export default function AppCard({ app, index }: AppCardProps) {
         <p className="text-muted mt-3 max-w-md leading-relaxed">
           {app.description}
         </p>
-
-        {appBuilders.length > 0 && (
-          <div className="mt-6 flex items-center gap-3">
-            <div className="flex -space-x-2">
-              {appBuilders.map((builder) => (
-                <Image
-                  key={builder.github}
-                  src={avatarUrl(builder.github)}
-                  alt=""
-                  width={28}
-                  height={28}
-                  className="rounded-full border-2 border-background"
-                />
-              ))}
-            </div>
-            <span className="font-mono text-xs text-muted">
-              by {appBuilders.map((builder) => builder.name).join(" & ")}
-            </span>
-          </div>
-        )}
 
         <div className="mt-8 pt-5 border-t border-border flex items-center justify-between gap-4">
           <span className="font-mono text-xs text-muted truncate">
