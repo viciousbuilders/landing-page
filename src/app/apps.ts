@@ -51,7 +51,7 @@ export const apps: App[] = [
     image: "/project-screenshots/pipet-right-command-landing.png",
     imageAlt: "Pipet landing page with its voice dictation download and setup links",
     description:
-      "Hold Right Command, speak, and release. Press Esc to cancel. Your words land wherever you type on your Mac.",
+      "Tap Right Command, speak, and tap again. Press Esc to cancel. Your words land wherever you type on your Mac.",
     href: "/pipet",
     domain: "viciousbuilders.com/pipet",
     builders: ["Theskrtnerd"],
