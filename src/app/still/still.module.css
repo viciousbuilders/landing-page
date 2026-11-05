@@ -83,6 +83,7 @@
 .actions { margin-top: 28px; }
 .primary {
   display: inline-flex;
+  gap: 8px;
   min-height: 50px;
   align-items: center;
   justify-content: center;

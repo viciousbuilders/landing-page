@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./still.module.css";
 
 const source = "https://github.com/viciousbuilders/still";
+const release = `${source}/releases/download/v0.3.1/Still-0.3.1-universal.dmg`;
 
 export const metadata: Metadata = {
   title: "Still | Block distracting websites on your Mac",
@@ -42,11 +43,13 @@ export default function StillPage() {
             groups stay on throughout, even when Still is closed.
           </p>
           <div className={styles.actions}>
-            <a href={`${source}#build-and-open`} aria-describedby="still-requirements" className={styles.primary}>
-              Get started on Mac
+            <a href={release} aria-describedby="still-requirements" className={styles.primary}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" /></svg>
+              Download for Mac
             </a>
             <p id="still-requirements" className={styles.requirements}>
-              macOS 13+ · Build from source for now
+              v0.3.1 · Apple-notarized<br />
+              macOS 13+ · Apple silicon &amp; Intel
             </p>
           </div>
           <details className={styles.details}>
