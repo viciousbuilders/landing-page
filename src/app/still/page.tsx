@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./still.module.css";
 
 const source = "https://github.com/viciousbuilders/still";
-const release = `${source}/releases/download/v0.3.1/Still-0.3.1-universal.dmg`;
+const release = `${source}/releases/download/v0.3.2/Still-0.3.2-universal.dmg`;
 
 export const metadata: Metadata = {
   title: "Still | Block distracting websites on your Mac",
@@ -48,7 +48,7 @@ export default function StillPage() {
               Download for Mac
             </a>
             <p id="still-requirements" className={styles.requirements}>
-              v0.3.1 · Apple-notarized<br />
+              v0.3.2 · Apple-notarized<br />
               macOS 13+ · Apple silicon &amp; Intel
             </p>
           </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./scaffold.module.css";
 
 const source = "https://github.com/viciousbuilders/scaffold";
-const release = `${source}/releases/download/v0.1.2/Scaffold-0.1.2-arm64.dmg`;
+const release = `${source}/releases/download/v0.2.0/Scaffold-0.2.0-arm64.dmg`;
 
 export const metadata: Metadata = {
   title: "Scaffold | A place to practise",
